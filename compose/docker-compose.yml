@@ -50,7 +50,7 @@ services:
     <<: *restart_policy
     command: "/usr/local/bin/proxy-entrypoint.sh"
     ports:
-      - "${PORT:-8070}:80"
+      - "${PORT:-8070}:8070"
     environment:
       APP_HOST: web
     depends_on:
